@@ -1,0 +1,3117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script language="javascript">
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZQ880VLVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6ZQ880VLVF');
+</script>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="http://localhost/icde/"> <!-- // CHANGE THIS BEFORE GOING LIVE -->
+
+<style>
+  body{visibility:hidden}
+  </style>
+  <link rel="icon" type="image/svg" href="img/icde2027_logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <title>43rd IEEE International Conference on Data Engineering, Copenhagen, Denmark - May 17-21, 2027.</title>
+    <meta name="description" content="" />
+
+<link rel="stylesheet" href="css/min.css">
+
+</head>
+
+<body>
+
+
+  <header>
+    <div class="small-menu"><a class="hamburger"></a></div>
+    <div class="small-header">
+      <figure class="logo">
+        <a href="index.html"><img src="img/icde2027_logo_tiny.svg" alt="ICDE 2027 Copenhagen, Denmark"></a>
+      </figure>
+    </div>
+
+    <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <figure class="logo">
+        <img src="img/icde2027_logo_tiny.svg" alt="ICDE 2027 Copenhagen, Denmark">
+        <img src="img/icde2027_logo_tiny.svg" alt="ICDE 2027 Copenhagen, Denmark">
+      </figure>
+      <div>
+        General Information
+        <div class="menu">
+          <a href="index.html" itemprop="url"><span itemprop="name">Conference Overview</span></a>
+          <a href="officers.html" itemprop="url"><span itemprop="name">Conference Officers</span></a>
+          <a href="pc-chairs.html" itemprop="url"><span itemprop="name">Program Committees</span></a>
+        </div>
+      </div>
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;Conference Program&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="menu">
+        
+        <a href="accepted-papers.html" itemprop="url"><span itemprop="name">Accepted Research Papers</span></a>
+        <!-- 
+          <a href="program.html" itemprop="url"><span itemprop="name">Program Overview</span></a>
+          <a href="keynotes.html" itemprop="url"><span itemprop="name">Keynotes</span></a>
+          <a href="panel.html" itemprop="url"><span itemprop="name">Panel</span></a>
+          <a href="phdsymposium.html" itemprop="url"><span itemprop="name">PhD Symposium</span></a>
+          <a href="workshops.html" itemprop="url"><span itemprop="name">Workshops</span></a>
+        -->
+        </div> 
+      </div>
+      <div>
+        Call for Contributions
+        <div class="menu">
+          <a href="cf-research-papers.html" itemprop="url"><span itemprop="name">Research Papers</span></a>  
+           <a href="cf-industry-track.html" itemprop="url"><span itemprop="name">Industry and Application</span></a>
+           <a href="cf-future.html" itemprop="url"><span itemprop="name">Data Engineering <br>Future Technologies</span></a>
+           <hr>
+          <a href="cf-demonstrations.html" itemprop="url"><span itemprop="name">Demonstrations</span></a>
+          
+          <a href="cf-workshop-proposals.html" itemprop="url"><span itemprop="name">Workshop Proposals</span></a>
+        
+          <a href="cf-tutorials.html" itemprop="url"><span itemprop="name">Tutorials</span></a>
+          <!--
+          <a href="cf-tkde-poster.html" itemprop="url"><span itemprop="name">TKDE Poster</span></a>
+          -->
+          <a href="cf-phd-symposium.html" itemprop="url"><span itemprop="name">Ph.D. Symposium</span></a>
+          <!--
+          <a href="cf-lightning-talks.html" itemprop="url"><span itemprop="name">Lightning Talks</span></a>-->
+          
+        
+        </div>
+      </div>
+      <div>
+        Participant Information
+        <!-- <div class="menu">
+          <a href="registration.html" itemprop="url"><span itemprop="name">Registration</span></a>
+          <a href="venue.html" itemprop="url"><span itemprop="name">Conference Venue</span></a>
+          <a href="hotel.html" itemprop="url"><span itemprop="name">Hotel Options</span></a>
+          <a href="local-attractions.html" itemprop="url"><span itemprop="name">Local Attractions</span></a>
+          <a href="travel-grants.html" itemprop="url"><span itemprop="name">Student Travel Grants</span></a>
+          <a href="transportation.html" itemprop="url"><span itemprop="name">Transportation</span></a>
+
+        </div> -->
+      </div>
+
+      <div>
+        Dates &amp; Guidelines
+        <div class="menu">
+          <a href="important-dates.html" itemprop="url"><span itemprop="name">Important Dates</span></a>
+          <hr />
+          <!-- <a href="formatting-guidelines.html" itemprop="url"><span itemprop="name">Formatting Guidelines</span></a> -->
+          <a href="submission-guidelines.html" itemprop="url"><span itemprop="name">Submission Guidelines</span></a>
+        </div>
+      </div>
+      <div>
+        Sponsorship
+        <div class="menu">
+          
+          <a href="sponsorship-opportunities.html" itemprop="url"><span itemprop="name">Opportunities</span></a>
+        
+          <!-- <a href="sponsorship-faq.html" itemprop="url"><span itemprop="name">Sponsorship FAQ</span></a> -->
+        </div>
+      </div>
+
+    </nav>
+    <section style="text-align: center;" class="carousel small"     data-images='[
+    {"i":"./img/copenhagen/copenhagen1.jpg"},
+    {"i":"./img/copenhagen/copenhagen2.jpg"},
+    {"i":"./img/copenhagen/copenhagen3.jpg"},
+    {"i":"./img/copenhagen/copenhagen4.jpg"}
+  ]'>
+  <span style="text-align: center; display: block;">43<sup>rd</sup> IEEE International Conference on Data Engineering (ICDE)</span>
+  <span style="background: #c51c2b;">Copenhagen, Denmark - May 17 -21, 2027</span>
+  <div data-url="./img/copenhagen/copenhagen1.jpg" style="background-image: url(&quot;./img/copenhagen/copenhagen1.jpg&quot;); opacity: 1;"></div>
+      </div>
+    </section>
+
+  </header>
+
+<main class="body">
+    <style>
+     .boxstyle  {
+        border: 0;
+        background: #eee;
+        color: #383838;
+        display: block;
+        height: 300px;
+        overflow-y: auto;
+        padding: 5px;
+        border-radius:5px;
+      }
+    </style> , 
+<section class="important-dates" style="font-size: 18px; padding: 0 50px 150px 0;">
+  <br />
+  
+  <h2 style="color: #c51c2b;">Accepted Research Papers for ICDE 2026</h2>
+  <ul class="paper-list">
+    <li class="paper-item">
+      <div class="number-column">01</div>
+      <div>
+        <div class="title">On the (Generative) Linear Sketching Problem</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Xinyu Yuan*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Yan Qiao</span>
+            <span class="affiliation">(Hefei University of Technology)</span>,
+            <span class="author-name">Zonghui Wang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Wenzhi Chen</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">02</div>
+      <div>
+        <div class="title">Efficient Few-Shot Traffic Forecasting Across Cities via Topology-Agnostic Spatial Interaction Experts</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zhaoyang Sun</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Yudong Zhang*</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Wenxuan Rao</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Xu Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Binwu Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Zhengyang Zhou</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Yang Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">03</div>
+      <div>
+        <div class="title">Maintaining Leiden Communities in Large Dynamic Graphs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Chunxu Lin*</span>
+            <span class="affiliation">(The Chinese University of Hong Kong，Shenzhen)</span>,
+            <span class="author-name">Yumao Xie</span>
+            <span class="affiliation">(The Chinese University of Hong Kong，Shenzhen)</span>,
+            <span class="author-name">Yixiang Fang</span>
+            <span class="affiliation">(The Chinese University of Hong Kong，Shenzhen)</span>,
+            <span class="author-name">Yongmin Hu</span>
+            <span class="affiliation">(ByteDance Inc)</span>,
+            <span class="author-name">Yingqian Hu</span>
+            <span class="affiliation">(ByteDance Inc)</span>,
+            <span class="author-name">Cheng Chen</span>
+            <span class="affiliation">(ByteDance Inc)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">04</div>
+      <div>
+        <div class="title">VineCache: Adaptive and Group-Aware Embedding Caching for Deep Recommendation Inference</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Menglei Chen</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Yu Hua*</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Ming Zhang</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Zhijun Yang</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">05</div>
+      <div>
+        <div class="title">RECAST: A Region-Scoped Adaptive Index for Exact Similarity Search</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yining Liu*</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Rui Mao</span>
+            <span class="affiliation">(Shenzhen University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">06</div>
+      <div>
+        <div class="title">DepTGL: A Parallel Framework for Memory-based TGNN Training with Adaptive Temporal Data Dependency Management</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Linfang Chen</span>
+            <span class="affiliation">(Shandong University)</span>,
+            <span class="author-name">Zhen Song*</span>
+            <span class="affiliation">(Shandong University)</span>,
+            <span class="author-name">Lei Liu</span>
+            <span class="affiliation">(Shandong University)</span>,
+            <span class="author-name">Yu Gu</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Yushuai Li</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Yanfeng Zhang</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Lizhen Cui</span>
+            <span class="affiliation">(Shandong University)</span>,
+            <span class="author-name">Ge Yu</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Tianyi Li</span>
+            <span class="affiliation">(Aalborg University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">07</div>
+      <div>
+        <div class="title">Graph-Conditioned Flow Matching for Multimodal Attributed Graphs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jielong Lu*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Zhihao Wu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Jiajun Yu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Mengxuan Li</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Ke Liu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Haishuai Wang</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">08</div>
+      <div>
+        <div class="title">Scalable Algorithm for Dynamic Quasi-clique Detection</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jingbang Chen*</span>
+            <span class="affiliation">(The Chinese University of Hong Kong, Shenzhen)</span>,
+            <span class="author-name">Weinuo Li</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Yingli Zhou</span>
+            <span class="affiliation">(The Chinese University of Hong Kong, Shenzhen)</span>,
+            <span class="author-name">Hao Wu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Can Wang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Yixiang Fang</span>
+            <span class="affiliation">(The Chinese University of Hong Kong, Shenzhen)</span>,
+            <span class="author-name">Chenhao Ma</span>
+            <span class="affiliation">(The Chinese University of Hong Kong, Shenzhen)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">09</div>
+      <div>
+        <div class="title">MixSV: Mixup with Shapley Values</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jinfei Liu*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Xiaokai Mao</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Hanxi Liu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Junyuan Pang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Qiheng Sun</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Kui Ren</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">10</div>
+      <div>
+        <div class="title">IG-FM: Imputation-Guided Flow Matching for Multivariate Time-Series Generation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Ling Cheng*</span>
+            <span class="affiliation">(Imperial Global Singapore, Imperial College London)</span>,
+            <span class="author-name">Kexin Wei</span>
+            <span class="affiliation">(Imperial Global Singapore, Imperial College London)</span>,
+            <span class="author-name">Viktor Schlegel</span>
+            <span class="affiliation">(Imperial Global Singapore, Imperial College London)</span>,
+            <span class="author-name">Qian Shao</span>
+            <span class="affiliation">(Singapore Management University)</span>,
+            <span class="author-name">Anna Bird</span>
+            <span class="affiliation">(Imperial Global Singapore, Imperial College London)</span>,
+            <span class="author-name">Wei Wei</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Nick Oliver</span>
+            <span class="affiliation">(Imperial College London)</span>,
+            <span class="author-name">Anil Bharath</span>
+            <span class="affiliation">(Imperial College London)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">11</div>
+      <div>
+        <div class="title">Env4Cast: Coupling Multi-Physics Processes and Multi-Scale Data Correlations for Environmental Spatiotemporal Forecasting</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Xingyu Zhao</span>
+            <span class="affiliation">(Ocean University of China)</span>,
+            <span class="author-name">Dongliang Chen</span>
+            <span class="affiliation">(Ocean University of China)</span>,
+            <span class="author-name">Lei Zhou</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Guoqing Chao</span>
+            <span class="affiliation">(Harbin Institute of Technology)</span>,
+            <span class="author-name">Lei Cao</span>
+            <span class="affiliation">(The University of Arizona)</span>,
+            <span class="author-name">Junyu Dong</span>
+            <span class="affiliation">(Ocean University of China)</span>,
+            <span class="author-name">Yanwei Yu*</span>
+            <span class="affiliation">(Ocean University of China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">12</div>
+      <div>
+        <div class="title">State-Induced Approximate Metamorphic Testing for Detecting Logical Bugs in DBMSs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">LI LIN*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Yaorui Fei</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Lingfeng Bao</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Rongxin Wu</span>
+            <span class="affiliation">(Xiamen University)</span>,
+            <span class="author-name">Dongxiang Zhang</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">13</div>
+      <div>
+        <div class="title">Dual-Efficient Federated Spatio-Temporal Transfer Learning for Cross-City Traffic Forecasting</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zhaoyang Sun</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Yudong Zhang*</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Wenxuan Rao</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Xu Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Pengkun Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Zhengyang Zhou</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Yang Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">14</div>
+      <div>
+        <div class="title">Graph Feature Imputation with Joint Latent-Space Alignment and Data-Space Denoising</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Mengshi Chen</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Kai Wang*</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Jianwei Wang</span>
+            <span class="affiliation">(University of New South Wales)</span>,
+            <span class="author-name">Tengchao Li</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Ruijia Wu</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Xuemin Lin</span>
+            <span class="affiliation">(The Chinese University of Hong Kong, Shenzhen)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">15</div>
+      <div>
+        <div class="title">REAL: A Reasoning-Enhanced Graph Framework for Long-Term Memory Management of LLMs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Keer Lu*</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Liwei Chen</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Guoqing Jiang</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Zhiheng Qin</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Yunhuai Liu</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Wentao Zhang</span>
+            <span class="affiliation">(Peking University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">16</div>
+      <div>
+        <div class="title">TRACE: State-Aware Query Processing over Temporal Evidence Graphs for Conversational Data</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Maolin Wang*</span>
+            <span class="affiliation">(City University of Hong Kong)</span>,
+            <span class="author-name">Yu Wang</span>
+            <span class="affiliation">(City University of Hong Kong)</span>,
+            <span class="author-name">Zichun Liu</span>
+            <span class="affiliation">(City University of Hong Kong)</span>,
+            <span class="author-name">Baiyuan Qiu</span>
+            <span class="affiliation">(Independent Researcher)</span>,
+            <span class="author-name">Jiguang Shen</span>
+            <span class="affiliation">(Independent Researcher)</span>,
+            <span class="author-name">Chenbin Zhang</span>
+            <span class="affiliation">(Independent Researcher)</span>,
+            <span class="author-name">Haoran Yang</span>
+            <span class="affiliation">(Central South University)</span>,
+            <span class="author-name">Hao Miao</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">17</div>
+      <div>
+        <div class="title">Scaling Biclique Percolation for Community Detection in Large Bipartite Networks</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yue Zeng</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Rong-Hua Li*</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Qiangqiang Dai</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Guoren Wang</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">18</div>
+      <div>
+        <div class="title">DaTSClean: Downstream-Aware Time Series Cleaning via Joint Strategy Selection and Ratio Optimization</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yida Liu</span>
+            <span class="affiliation">(Harbin Institute of Technology)</span>,
+            <span class="author-name">Xiaoou Ding*</span>
+            <span class="affiliation">(Harbin Institute of Technology)</span>,
+            <span class="author-name">Xueze Chen</span>
+            <span class="affiliation">(Harbin Institute of Technology)</span>,
+            <span class="author-name">Muyun Zhou</span>
+            <span class="affiliation">(Harbin Institute of Technology)</span>,
+            <span class="author-name">Chen Wang</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Donghua Yang</span>
+            <span class="affiliation">(Harbin Institute of Technology)</span>,
+            <span class="author-name">Hongzhi Wang</span>
+            <span class="affiliation">(Harbin Institute of Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">19</div>
+      <div>
+        <div class="title">Feature Attribution in Directed Acyclic Graphs Using Edge Intervention</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Qiheng Sun</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Junxu Liu</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Xiaokai Mao</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Haocheng Xia</span>
+            <span class="affiliation">(University of Illinois Urbana-Champaign)</span>,
+            <span class="author-name">Jinfei Liu*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Kui Ren</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Haibo Hu</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">20</div>
+      <div>
+        <div class="title">DaDaDa: A Dataset for Data Pricing in Data Marketplaces</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Qiheng Sun</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Hongwei Zhang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Junxu Liu</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Xiaokai Mao</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Jinfei Liu*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Kui Ren</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Haibo Hu</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">21</div>
+      <div>
+        <div class="title">Auction-based Data Pricing: Offline and Online</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Chen Chen*</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Ye Yuan</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Zhenyu Wen</span>
+            <span class="affiliation">(Zhejiang University of Technology)</span>,
+            <span class="author-name">Ziqi Cao</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Shiyuan Tang</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Lianpeng Qiao</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">22</div>
+      <div>
+        <div class="title">WTNG: Efficient Multi-Vector Search via Weight-Template Navigation Graph</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Haoran Tang</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Qihao Cheng*</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Da Yan</span>
+            <span class="affiliation">(Indiana University Bloomington)</span>,
+            <span class="author-name">Tianhao Wu</span>
+            <span class="affiliation">(Nanyang Technological University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">23</div>
+      <div>
+        <div class="title">Timely and Stable Online Forecasting under Delayed Supervision</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jinming Yao*</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Jinmiao Hu</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Yudong Zhang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Zhengyang Zhou</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Pengkun Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Binwu Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Xu Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>,
+            <span class="author-name">Yang Wang</span>
+            <span class="affiliation">(University of Science and Technology of China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">24</div>
+      <div>
+        <div class="title">PACE-GNN: Cost-Aware Progressive Graph Granularity Scheduling for Faster Convergence in GNN Training</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Qiqi ZHOU*</span>
+            <span class="affiliation">(Hong Kong University of Science and Technology)</span>,
+            <span class="author-name">Yanyan Shen</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Lei Chen</span>
+            <span class="affiliation">(HKUST (GZ))</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">25</div>
+      <div>
+        <div class="title">Cost-Effective Numerical QA over Semi-Structured Table: Structuring, Resolution, Planning</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Feng Luo</span>
+            <span class="affiliation">(RMIT University)</span>,
+            <span class="author-name">Hui Luo</span>
+            <span class="affiliation">(University of Wollongong)</span>,
+            <span class="author-name">Zhifeng Bao*</span>
+            <span class="affiliation">(The University of Queensland)</span>,
+            <span class="author-name">J. Shane Culpepper</span>
+            <span class="affiliation">(The University of Queensland)</span>,
+            <span class="author-name">Xiaoli Wang</span>
+            <span class="affiliation">(Xiamen University)</span>,
+            <span class="author-name">Shazia Sadiq</span>
+            <span class="affiliation">(The University of Queensland)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">26</div>
+      <div>
+        <div class="title">EvoRAG: Making KG-based RAG Automatically Evolve through Feedback Backpropagation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zhenbo Fu*</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Yuanzhe Zhang</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Qiange Wang</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Hao Yuan</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Yuehao Xu</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Enze Yi</span>
+            <span class="affiliation">(Northeast Electric Power Research Institute of State Grid Liaoning Electric Power Supply Co, Ltd)</span>,
+            <span class="author-name">Yanfeng Zhang</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Ge Yu</span>
+            <span class="affiliation">(Northeastern University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">27</div>
+      <div>
+        <div class="title">Falcon: GPU-Based Floating-point Adaptive Lossless Compression</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zheng Li</span>
+            <span class="affiliation">(Chongqing University)</span>,
+            <span class="author-name">Weiyan Wang</span>
+            <span class="affiliation">(Chongqing University)</span>,
+            <span class="author-name">Ruiyuan Li*</span>
+            <span class="affiliation">(Chongqing University)</span>,
+            <span class="author-name">Chao Chen</span>
+            <span class="affiliation">(Chongqing University)</span>,
+            <span class="author-name">Xianlei Long</span>
+            <span class="affiliation">(Chongqing University)</span>,
+            <span class="author-name">Linjiang Zheng</span>
+            <span class="affiliation">(Chongqing University)</span>,
+            <span class="author-name">Quanqing Xu</span>
+            <span class="affiliation">(OceanBase, Ant Group)</span>,
+            <span class="author-name">Chuanhui Yang</span>
+            <span class="affiliation">(OceanBase, Ant Group)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">28</div>
+      <div>
+        <div class="title">DiaLSM: Towards Write-Stall-Free Performance via Shard-based LSM-tree</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Hongsu Byun*</span>
+            <span class="affiliation">(Sogang University)</span>,
+            <span class="author-name">Safdar Jamil</span>
+            <span class="affiliation">(MangoBoost Inc. Korea)</span>,
+            <span class="author-name">Honghyeon Yoo</span>
+            <span class="affiliation">(Sogang University)</span>,
+            <span class="author-name">Sungyong Park</span>
+            <span class="affiliation">(Sogang University)</span>,
+            <span class="author-name">Myungcheol Lee</span>
+            <span class="affiliation">(ETRI)</span>,
+            <span class="author-name">Xubin He</span>
+            <span class="affiliation">(Temple University)</span>,
+            <span class="author-name">Zhichao Cao</span>
+            <span class="affiliation">(Arizona State University)</span>,
+            <span class="author-name">Youngjae Kim</span>
+            <span class="affiliation">(Sogang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">29</div>
+      <div>
+        <div class="title">D-LIRA: Budgeted Maintenance for Learned Partition Pruning in Dynamic ANN Search</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Ximu Zeng</span>
+            <span class="affiliation">(University of Electronic Science and Technology of China)</span>,
+            <span class="author-name">Xinjie Lin</span>
+            <span class="affiliation">(University of Electronic Science and Technology of China)</span>,
+            <span class="author-name">Liwei Deng</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Shiyuan Deng</span>
+            <span class="affiliation">(Huawei Technologies Ltd.)</span>,
+            <span class="author-name">Ran Xu</span>
+            <span class="affiliation">(Huawei Technologies Ltd.)</span>,
+            <span class="author-name">Han Su</span>
+            <span class="affiliation">(University of Electronic Science and Technology of China)</span>,
+            <span class="author-name">Kai Zheng*</span>
+            <span class="affiliation">(University of Electronic Science and Technology of China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">30</div>
+      <div>
+        <div class="title">Pacha Sketches: Organizing Multidimensional Space for Efficient Aggregation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Rudi Poepsel-Lemaitre*</span>
+            <span class="affiliation">(Technische Universität Berlin)</span>,
+            <span class="author-name">Kaustubh Beedkar</span>
+            <span class="affiliation">(Indian Institute of Technology Delhi)</span>,
+            <span class="author-name">Volker Markl</span>
+            <span class="affiliation">(Technische Universität Berlin)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">31</div>
+      <div>
+        <div class="title">Hypergraph-Enhanced Evidence Selection for Long-Context Multimodal Document QA</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Wenxin Zhao*</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>,
+            <span class="author-name">Jiachuan Wang</span>
+            <span class="affiliation">(University of Tsukuba)</span>,
+            <span class="author-name">Xinyi Zhu</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology (Guangzhou))</span>,
+            <span class="author-name">Jiake Ge</span>
+            <span class="affiliation">(Tianjin University)</span>,
+            <span class="author-name">Haoyang Li</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Yongqi Zhang</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology (Guangzhou))</span>,
+            <span class="author-name">Shuangyin Li</span>
+            <span class="affiliation">(South China Normal University)</span>,
+            <span class="author-name">Lei Chen</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">32</div>
+      <div>
+        <div class="title">CRSTNet: Efficient Spatio-Temporal Forecasting via Adaptive Cluster Routing</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Chaofan Wang</span>
+            <span class="affiliation">(Yantai University)</span>,
+            <span class="author-name">Ziqiang Yu*</span>
+            <span class="affiliation">(Yantai University)</span>,
+            <span class="author-name">Xiaohui Yu</span>
+            <span class="affiliation">(York University)</span>,
+            <span class="author-name">Jilin Hu</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Meng Chen</span>
+            <span class="affiliation">(Shandong University)</span>,
+            <span class="author-name">Yang Liu</span>
+            <span class="affiliation">(Wilfrid Laurier University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">33</div>
+      <div>
+        <div class="title">MetaCypher: Catalog-Grounded Structure Selection for Text-to-Cypher</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yuxuan Hou</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Junjie Yao*</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Qiyuan Wang</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Rongrong Yang</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Yanyan Shen</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">34</div>
+      <div>
+        <div class="title">Robust Model Selection for Graph Neural Networks via Knowledge-Guided Evidence Learning</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Mingtao Zhang*</span>
+            <span class="affiliation">(PolyU)</span>,
+            <span class="author-name">Haoyang Li</span>
+            <span class="affiliation">(PolyU)</span>,
+            <span class="author-name">Yang Yang</span>
+            <span class="affiliation">(Nankai University)</span>,
+            <span class="author-name">Yuming Xu</span>
+            <span class="affiliation">(PolyU)</span>,
+            <span class="author-name">Nicole Hu</span>
+            <span class="affiliation">(PolyU)</span>,
+            <span class="author-name">Chen Jason Zhang</span>
+            <span class="affiliation">(PolyU)</span>,
+            <span class="author-name">Lei Chen</span>
+            <span class="affiliation">(HKUST(GZ))</span>,
+            <span class="author-name">Qing Li</span>
+            <span class="affiliation">(PolyU)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">35</div>
+      <div>
+        <div class="title">SLO-Driven Dual-Budget Scheduling for Cache-Enabled RAG Serving</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Hongbo Yin*</span>
+            <span class="affiliation">(HKUST(GZ))</span>,
+            <span class="author-name">Xin Zhang</span>
+            <span class="affiliation">(HKUST)</span>,
+            <span class="author-name">Jingzhi Fang</span>
+            <span class="affiliation">(HW)</span>,
+            <span class="author-name">Yanyan Shen</span>
+            <span class="affiliation">(SJTU)</span>,
+            <span class="author-name">Lei Chen</span>
+            <span class="affiliation">(HKUST(GZ))</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">36</div>
+      <div>
+        <div class="title">BriskSeed: Online History-Guided Reuse for Accelerating Dynamic Approximate Nearest Neighbor Search</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Hongru Gao</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Shuhao Zhang*</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Haikun Liu</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Xiaofei Liao</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Hai Jin</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">37</div>
+      <div>
+        <div class="title">PhyWorld-Align: A World Knowledge Model Framework for Heterogeneous Spatio-temporal Entity Alignment</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Runhao Zhao</span>
+            <span class="affiliation">(National University of Defense Technology)</span>,
+            <span class="author-name">Weixin Zeng</span>
+            <span class="affiliation">(National University of Defense Technology)</span>,
+            <span class="author-name">Jiuyang Tang</span>
+            <span class="affiliation">(National University of Defense Technology)</span>,
+            <span class="author-name">Zhengpin Li</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Wentao Zhang</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Xiang Zhao*</span>
+            <span class="affiliation">(National University of Defense Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">38</div>
+      <div>
+        <div class="title">Cohort-Match: Parallel Subgraph Matching Powered by Structural Cohort Scheduling</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zhijie Zhang</span>
+            <span class="affiliation">(Fudan University)</span>,
+            <span class="author-name">Tao Yu</span>
+            <span class="affiliation">(Fudan University)</span>,
+            <span class="author-name">Weiguo Zheng*</span>
+            <span class="affiliation">(Fudan University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">39</div>
+      <div>
+        <div class="title">BEACON: Bridging Multi-Modal Semantics and Asynchronous Propagation for Cloud System Anomaly Detection</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zhe Li</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Tengxue Zhang</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Yang Shu</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Tung Kieu</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Lunting Fan</span>
+            <span class="affiliation">(Alibaba Cloud Computing)</span>,
+            <span class="author-name">Yingying Zhang*</span>
+            <span class="affiliation">(Alibaba Cloud Computing)</span>,
+            <span class="author-name">Bin Yang</span>
+            <span class="affiliation">(East China Normal University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">40</div>
+      <div>
+        <div class="title">Towards Robust Multi-Modal Spatio-Temporal Prediction under Misaligned, Dynamic, and Uncertain Modalities</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yuting Huang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Zihao Xu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Chao Wang</span>
+            <span class="affiliation">(iQIYI Inc)</span>,
+            <span class="author-name">Huimei Zheng</span>
+            <span class="affiliation">(iQIYI Inc)</span>,
+            <span class="author-name">Ziquan Fang*</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">41</div>
+      <div>
+        <div class="title">Walias: A Multidimensional Workload-Aware Learned Index with Adaptive Splitting</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Dong Wang</span>
+            <span class="affiliation">(Chang&#x27;an University)</span>,
+            <span class="author-name">Yongzhi Ma</span>
+            <span class="affiliation">(Chang&#x27;an University)</span>,
+            <span class="author-name">Ningning Cui*</span>
+            <span class="affiliation">(Chang&#x27;an University)</span>,
+            <span class="author-name">Jianxin Li</span>
+            <span class="affiliation">(Edith Cowan University)</span>,
+            <span class="author-name">Jianzhong Qi</span>
+            <span class="affiliation">(The University of Melbourne)</span>,
+            <span class="author-name">Xiangyu Song</span>
+            <span class="affiliation">(Chang&#x27;an University)</span>,
+            <span class="author-name">Jianliang Xu</span>
+            <span class="affiliation">(Hong Kong Baptist University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">42</div>
+      <div>
+        <div class="title">Maintaining Ego-Betweenness Centrality at Billion Scale</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Kaiyu Chen*</span>
+            <span class="affiliation">(The University of New South Wales)</span>,
+            <span class="author-name">Dong Wen</span>
+            <span class="affiliation">(The University of New South Wales)</span>,
+            <span class="author-name">Wentao Li</span>
+            <span class="affiliation">(University of Leicester)</span>,
+            <span class="author-name">Wenjie Zhang</span>
+            <span class="affiliation">(The University of New South Wales)</span>,
+            <span class="author-name">Xuemin Lin</span>
+            <span class="affiliation">(The Chinese University of Hong Kong, Shenzhen)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">43</div>
+      <div>
+        <div class="title">[Experiment, Analysis, and Benchmark] TS-Fault: Benchmarking Time Series Forecasters Against Structural Faults</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yuyang Zhao</span>
+            <span class="affiliation">(Hong Kong University of Science and Technology (Guangzhou))</span>,
+            <span class="author-name">Lian Xu</span>
+            <span class="affiliation">(The University of Western Australia)</span>,
+            <span class="author-name">Hao Miao</span>
+            <span class="affiliation">(Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Chenxi Liu</span>
+            <span class="affiliation">(Hong Kong Institute of Science &amp; Innovation)</span>,
+            <span class="author-name">Hao Xue*</span>
+            <span class="affiliation">(Hong Kong University of Science and Technology (Guangzhou))</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">44</div>
+      <div>
+        <div class="title">HonorCut:  Higher-order Attributed Normalized Cut for Neural Attributed Graph Clustering</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Quanao Li</span>
+            <span class="affiliation">(Southwest University)</span>,
+            <span class="author-name">Longlong Lin*</span>
+            <span class="affiliation">(Southwest University)</span>,
+            <span class="author-name">Zeli Wang</span>
+            <span class="affiliation">(Chongqing University of Posts and Telecommunications)</span>,
+            <span class="author-name">Li Ni</span>
+            <span class="affiliation">(Anhui University)</span>,
+            <span class="author-name">Jin Zhao</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Ruikun Luo</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Rong-Hua Li</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">45</div>
+      <div>
+        <div class="title">D2TAD: Robust Trajectory Anomaly Detection on Incomplete Data via Discrete Diffusion Modeling</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Rui Fu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Tianjian Wang</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Ziquan Fang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Yunjun Gao*</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">46</div>
+      <div>
+        <div class="title">GEM: Revisiting GPU-Accelerated Edge-Centric Subgraph Matching on Large Graphs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Chengxiu Zheng*</span>
+            <span class="affiliation">(Northeastern University (China))</span>,
+            <span class="author-name">Yu Gu</span>
+            <span class="affiliation">(Northeastern University (China))</span>,
+            <span class="author-name">Zhigang Wang</span>
+            <span class="affiliation">(Guangzhou University)</span>,
+            <span class="author-name">Jianpeng Wei</span>
+            <span class="affiliation">(Northeastern University (China))</span>,
+            <span class="author-name">Ge Yu</span>
+            <span class="affiliation">(Northeastern University (China))</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">47</div>
+      <div>
+        <div class="title">Mismatch-Free One-Step at Scale: Linear-Time Ensemble Clustering with Soft Balancing</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Haoye Qiu</span>
+            <span class="affiliation">(Southeast University)</span>,
+            <span class="author-name">Xu Zhang</span>
+            <span class="affiliation">(Southeast University)</span>,
+            <span class="author-name">Ding Ding</span>
+            <span class="affiliation">(Southeast University)</span>,
+            <span class="author-name">Yuheng Jia*</span>
+            <span class="affiliation">(Southeast University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">48</div>
+      <div>
+        <div class="title">RDL-Bench: A Benchmark for Task-Aware Question Answering over Relational Databases</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yao Cheng*</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Siqiang Luo</span>
+            <span class="affiliation">(Nanyang Technological University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">49</div>
+      <div>
+        <div class="title">Privacy-Preserving Stream Joins</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Kajetan Maliszewski*</span>
+            <span class="affiliation">(RelationalAI)</span>,
+            <span class="author-name">Ioannis Demertzis</span>
+            <span class="affiliation">(UC Santa Cruz)</span>,
+            <span class="author-name">Volker Markl</span>
+            <span class="affiliation">(BIFOLD &amp; TU Berlin)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">50</div>
+      <div>
+        <div class="title">Sequential Recommendation via Multi-domain Data Integration and Diffusion Priors</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Shuliang Wang</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Jiabao Zhu</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Zhifei Li</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Sijie Ruan*</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">51</div>
+      <div>
+        <div class="title">Robust Traffic Flow Forecasting under Anomalies via Decoupled Spatio-Temporal Expert Collaboration</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">di jin</span>
+            <span class="affiliation">(tianjin university)</span>,
+            <span class="author-name">kaile zhang*</span>
+            <span class="affiliation">(tianjin university)</span>,
+            <span class="author-name">cuiying huo</span>
+            <span class="affiliation">(tianjin university)</span>,
+            <span class="author-name">lin wu</span>
+            <span class="affiliation">(tianjin university)</span>,
+            <span class="author-name">wenhuan lu</span>
+            <span class="affiliation">(tianjin university)</span>,
+            <span class="author-name">dongxiao he</span>
+            <span class="affiliation">(tianjin university)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">52</div>
+      <div>
+        <div class="title">Constant Patterns for Time Series Smoothing</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Songze Li</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Yilin Zhang</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Wenxuan Ma</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Aoqian Zhang</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Shaoxu Song*</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Jianmin Wang</span>
+            <span class="affiliation">(Tsinghua University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">53</div>
+      <div>
+        <div class="title">Certis: Risk-Certified Fact Insertion for Knowledge Graph Construction</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Qionghao Huang</span>
+            <span class="affiliation">(Zhejiang Normal University)</span>,
+            <span class="author-name">Feiyang Shu</span>
+            <span class="affiliation">(Zhejiang Normal University)</span>,
+            <span class="author-name">Changqin Huang*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Daoyi Li</span>
+            <span class="affiliation">(Zhejiang Normal University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">54</div>
+      <div>
+        <div class="title">RuleDep: Modeling Complementarity and Redundancy in Rule Aggregation for KGC</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Ye Sun*</span>
+            <span class="affiliation">(Beihang University)</span>,
+            <span class="author-name">Maribel Acosta</span>
+            <span class="affiliation">(Technical University of Munich)</span>,
+            <span class="author-name">Lei Shi</span>
+            <span class="affiliation">(Beihang University)</span>,
+            <span class="author-name">Yongxin Tong</span>
+            <span class="affiliation">(Beihang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">55</div>
+      <div>
+        <div class="title">TSTUDIO: Efficient Discovery of Semantic Tokens for Long Time Series Transformers</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Rundong Zuo*</span>
+            <span class="affiliation">(Hong Kong Baptist University)</span>,
+            <span class="author-name">Rui Cao</span>
+            <span class="affiliation">(Hong Kong Baptist University)</span>,
+            <span class="author-name">Guozhong Li</span>
+            <span class="affiliation">(King Abdullah University of Science &amp; Technology)</span>,
+            <span class="author-name">Byron Choi</span>
+            <span class="affiliation">(Hong Kong Baptist University)</span>,
+            <span class="author-name">Sourav Bhowmick</span>
+            <span class="affiliation">(Nanyang Technological University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">56</div>
+      <div>
+        <div class="title">Amending Rules Softly Incremental Datalog with Confidence-Aware Rules</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Arnaud Carayol</span>
+            <span class="affiliation">(LIGM, Univ Gustave Eiffel)</span>,
+            <span class="author-name">Olivier Curè</span>
+            <span class="affiliation">(LIGM, Univ Gustave Eiffel)</span>,
+            <span class="author-name">Riccardo Tommasini*</span>
+            <span class="affiliation">(INSA Lyon - LIRIS)</span>,
+            <span class="author-name">Weiqin Xu</span>
+            <span class="affiliation">(LIGM, Univ Gustace Eiffel)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">57</div>
+      <div>
+        <div class="title">ISPG: Cost-Based Interleaved Plan Generation for SQL/PGQ Queries</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yiwen Li*</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Aoqian Zhang</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Ziqi Zou</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Kangfei Zhao</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Shuai Zhao</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Hao Zhang</span>
+            <span class="affiliation">(The Chinese University of Hong Kong)</span>,
+            <span class="author-name">Zhiwei Zhang</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">58</div>
+      <div>
+        <div class="title">HERA: A Heterogeneous Partitioning Framework for OLAP Replicas via LLM–Driven Agents</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yilin Wang</span>
+            <span class="affiliation">(Renmin University of China)</span>,
+            <span class="author-name">Xinyi Zhang*</span>
+            <span class="affiliation">(Renmin University of China)</span>,
+            <span class="author-name">Yishen Sun</span>
+            <span class="affiliation">(PingCAP)</span>,
+            <span class="author-name">Xinyue Shi</span>
+            <span class="affiliation">(Renmin University of China)</span>,
+            <span class="author-name">Qiyu Zhuang</span>
+            <span class="affiliation">(Renmin University of China)</span>,
+            <span class="author-name">Yinhao Hong</span>
+            <span class="affiliation">(Zhejiang Agriculture and Forestry University: Zhejiang A and F University)</span>,
+            <span class="author-name">Wei Lu</span>
+            <span class="affiliation">(Renmin University of China)</span>,
+            <span class="author-name">Zhanhao Zhao</span>
+            <span class="affiliation">(Renmin University of China)</span>,
+            <span class="author-name">Kai Xu</span>
+            <span class="affiliation">(PingCAP)</span>,
+            <span class="author-name">Heng Long</span>
+            <span class="affiliation">(PingCAP)</span>,
+            <span class="author-name">Qiu Cui</span>
+            <span class="affiliation">(PingCAP)</span>,
+            <span class="author-name">Liu Tang</span>
+            <span class="affiliation">(PingCAP)</span>,
+            <span class="author-name">Qi Liu</span>
+            <span class="affiliation">(PingCAP)</span>,
+            <span class="author-name">Xiaoyong Du</span>
+            <span class="affiliation">(Renmin University of China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">59</div>
+      <div>
+        <div class="title">OptiAQP: Index-Assisted Stratified Sampling for Online Aggregation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yunnan Yu*</span>
+            <span class="affiliation">(University at Buffalo, SUNY)</span>,
+            <span class="author-name">Al Amin Tushar</span>
+            <span class="affiliation">(University at Buffalo, SUNY)</span>,
+            <span class="author-name">Zhuoyue Zhao</span>
+            <span class="affiliation">(University at Buffalo, SUNY)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">60</div>
+      <div>
+        <div class="title">TrajDC: Efficient Trajectory Similarity Learning with Length-Adaptive Dataset Condensation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yupu Zhang*</span>
+            <span class="affiliation">(University of Electronic Science and Technology of China)</span>,
+            <span class="author-name">Liwei Deng</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Hao Miao</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Ximu Zeng</span>
+            <span class="affiliation">(University of Electronic Science and Technology of China)</span>,
+            <span class="author-name">Yan Zhao</span>
+            <span class="affiliation">(University of Electronic Science and Technology of China)</span>,
+            <span class="author-name">Kai Zheng</span>
+            <span class="affiliation">(University of Electronic Science and Technology of China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">61</div>
+      <div>
+        <div class="title">LDPGraph: Locally Differentially Private Graph Synthesis by Exploiting Neighborhood Structure</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jiawei Dong</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Zhikun Zhang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Quan Yuan</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Zhe Liu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Yunjun Gao*</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">62</div>
+      <div>
+        <div class="title">SecDVA: A Maliciously Secure Multi-Party Framework for Data Value Assessment in Modern Machine Learning Data Markets</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Lixu Wang*</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Xinpeng Yang</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Meng Hao</span>
+            <span class="affiliation">(Singapore Management University)</span>,
+            <span class="author-name">Guangyi Zhang</span>
+            <span class="affiliation">(Shenzhen Technology University)</span>,
+            <span class="author-name">Tianwei Zhang</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Wei Dong</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Chenkai Weng</span>
+            <span class="affiliation">(Arizona State University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">63</div>
+      <div>
+        <div class="title">DeLoG: Enhancing Citation Faithfulness Through Document-to-Fact contribution relation Modeling</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zhichao Yan*</span>
+            <span class="affiliation">(shanxi University)</span>,
+            <span class="author-name">Lianlong Wu</span>
+            <span class="affiliation">(University of Oxford)</span>,
+            <span class="author-name">Jiapu Wang</span>
+            <span class="affiliation">(University of Science and Technology)</span>,
+            <span class="author-name">Haoran Luo</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Junbiao Cui</span>
+            <span class="affiliation">(Shanxi University)</span>,
+            <span class="author-name">Kaixuan Yao</span>
+            <span class="affiliation">(Shanxi University)</span>,
+            <span class="author-name">Xiaoli Li</span>
+            <span class="affiliation">(Singapore University of Technology and Design)</span>,
+            <span class="author-name">Jiye Liang</span>
+            <span class="affiliation">(Shanxi University)</span>,
+            <span class="author-name">Ru Li</span>
+            <span class="affiliation">(Shanxi University)</span>,
+            <span class="author-name">Jeff Z. Pan</span>
+            <span class="affiliation">(University of Edinburgh)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">64</div>
+      <div>
+        <div class="title">KPred: Adaptive Auto-Scaling with Complex Workload Prediction in Cloud Services</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jiancong Zhu</span>
+            <span class="affiliation">(Institute of Computing Technology, Chinese Academy of Sciences)</span>,
+            <span class="author-name">Xiaohui Peng*</span>
+            <span class="affiliation">(Institute of Computing Technology, Chinese Academy of Sciences)</span>,
+            <span class="author-name">Zishu Yu</span>
+            <span class="affiliation">(Institute of Computing Technology, Chinese Academy of Sciences)</span>,
+            <span class="author-name">Yicheng Liu</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Yixing Zhai</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Lian Jiang</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Jinghui Jia</span>
+            <span class="affiliation">(Kuaishou Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">65</div>
+      <div>
+        <div class="title">OneRetrieval: Unifying Multi-Branch E-commerce Retrieval with an Editable Generative Model</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Xuxin Zhang</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Ben Chen*</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Yue Lv</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Siyuan Wang</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Yupeng Li</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Yufei Ma</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Zihan Liang</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Tong Zhao</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Ying Yang</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Huangyu Dai</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Lingtao Mao</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Zhipeng Qian</span>
+            <span class="affiliation">(Kuaishou Technology)</span>,
+            <span class="author-name">Xinyu Sun</span>
+            <span class="affiliation">(Kuaishou Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">66</div>
+      <div>
+        <div class="title">Efficient $(k,\delta)$-Truss Community Search on Dynamic Temporal Graphs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Chuhan Hu</span>
+            <span class="affiliation">(Hong Kong university of science and technology (GZ))</span>,
+            <span class="author-name">Haolun Ma</span>
+            <span class="affiliation">(Hong Kong university of science and technology (GZ))</span>,
+            <span class="author-name">Mengxuan Zhang</span>
+            <span class="affiliation">(The Australian National University)</span>,
+            <span class="author-name">Ming Zhong</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Lei Li*</span>
+            <span class="affiliation">(Hong Kong university of science and technology (GZ))</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">67</div>
+      <div>
+        <div class="title">EAGER: An Efficient and Accurate Database Generator Under Cardinality Constraints</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Lianyuan Jin</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Jiayi Wang</span>
+            <span class="affiliation">(National University of Singapore)</span>,
+            <span class="author-name">Jiannan Wang*</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Jianhua Feng</span>
+            <span class="affiliation">(Tsinghua University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">68</div>
+      <div>
+        <div class="title">Category-Anchored Large Language Models for Next POI Recommendation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Lexi Bai*</span>
+            <span class="affiliation">(Harbin Institute of Technology, Shenzhen)</span>,
+            <span class="author-name">Xiaopeng Zeng</span>
+            <span class="affiliation">(Harbin Institute of Technology, Shenzhen)</span>,
+            <span class="author-name">Xun Zhou</span>
+            <span class="affiliation">(Harbin Institute of Technology, Shenzhen)</span>,
+            <span class="author-name">Yuanshao Zhu</span>
+            <span class="affiliation">(City University of Hong Kong)</span>,
+            <span class="author-name">Jianqiao Yu</span>
+            <span class="affiliation">(Harbin Institute of Technology, Shenzhen)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">69</div>
+      <div>
+        <div class="title">AMAZe: A Multi-Agent Zero-shot Index Advisor for Relational Databases</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zhaodonghui Li*</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Haitao Yuan</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Jiachen Shi</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Hao Zhang</span>
+            <span class="affiliation">(DAMO Academy, Alibaba Group)</span>,
+            <span class="author-name">Yu Rong</span>
+            <span class="affiliation">(DAMO Academy, Alibaba Group)</span>,
+            <span class="author-name">Gao Cong</span>
+            <span class="affiliation">(Nanyang Technological University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">70</div>
+      <div>
+        <div class="title">Directory-Aware Query and Maintenance in Vector Databases</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Mengzhao Wang</span>
+            <span class="affiliation">(Hangzhou Dianzi University)</span>,
+            <span class="author-name">Zheng Gong</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Jingpei Hu</span>
+            <span class="affiliation">(ByteDance)</span>,
+            <span class="author-name">Jiajie Fu</span>
+            <span class="affiliation">(ByteDance)</span>,
+            <span class="author-name">Maojia Sheng</span>
+            <span class="affiliation">(ByteDance)</span>,
+            <span class="author-name">Junwen Chen</span>
+            <span class="affiliation">(ByteDance)</span>,
+            <span class="author-name">Yifan Zhu*</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">71</div>
+      <div>
+        <div class="title">WPBench: A Comprehensive Benchmark for Wind Power Forecasting</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yuhan Zhu</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Jilin Hu*</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Xinying Cai</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Yingshan Li</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Li Ma</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Xiangfei Qiu</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Linsen Li</span>
+            <span class="affiliation">(Hangzhou Hikvision Digital Technology Co., Ltd.)</span>,
+            <span class="author-name">Kai Zhang</span>
+            <span class="affiliation">(Hangzhou Hikvision Digital Technology Co., Ltd.)</span>,
+            <span class="author-name">Yao Fu</span>
+            <span class="affiliation">(Hangzhou Hikvision Digital Technology Co., Ltd.)</span>,
+            <span class="author-name">Weihao Jiang</span>
+            <span class="affiliation">(Hangzhou Hikvision Digital Technology Co., Ltd.)</span>,
+            <span class="author-name">Bin Yang</span>
+            <span class="affiliation">(East China Normal University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">72</div>
+      <div>
+        <div class="title">Federated and Balanced $k$-means: Communication Efficiency, Privacy, and Heterogeneity</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Feiteng Nie</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>,
+            <span class="author-name">Shengkun Zhu</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>,
+            <span class="author-name">Sheng Wang*</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>,
+            <span class="author-name">Yuan Sun</span>
+            <span class="affiliation">(La Trobe Business School, La Trobe University)</span>,
+            <span class="author-name">Feiping Nie</span>
+            <span class="affiliation">(School of Artificial Intelligence, Northwestern Polytechnical University)</span>,
+            <span class="author-name">Wei Song</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>,
+            <span class="author-name">Zhiyong Peng</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">73</div>
+      <div>
+        <div class="title">Highly Efficient Vertical Federated Clustering with Triangle-Inequality-based Pruning</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Feiteng Nie</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>,
+            <span class="author-name">Shengkun Zhu</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>,
+            <span class="author-name">Zepeng Liu</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>,
+            <span class="author-name">Sheng Wang*</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>,
+            <span class="author-name">Yuan Sun</span>
+            <span class="affiliation">(La Trobe Business School, La Trobe University)</span>,
+            <span class="author-name">Zhiyong Peng</span>
+            <span class="affiliation">(School of Computer Science, Wuhan University, China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">74</div>
+      <div>
+        <div class="title">Evolving from Lessons: Skill-Augmented Table Graph Reasoning for Operation-wise Table Question Answering</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Guixin Su*</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Qiankun Pi</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Mayi Xu</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Wenli Li</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Ming Zhong</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Yuanyuan Zhu</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Jiawei Jiang</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Tieyun Qian</span>
+            <span class="affiliation">(Wuhan University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">75</div>
+      <div>
+        <div class="title">CuEVM: Scaling Smart Contract Execution on GPUs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Nhut-Minh Ho*</span>
+            <span class="affiliation">(National University of Singapore)</span>,
+            <span class="author-name">Tien Tuan Anh Dinh</span>
+            <span class="affiliation">(Deakin University)</span>,
+            <span class="author-name">Quang Trung Ta</span>
+            <span class="affiliation">(National University of Singapore)</span>,
+            <span class="author-name">Fredrik Svantes</span>
+            <span class="affiliation">(Ethereum Foundation)</span>,
+            <span class="author-name">Xiaokui Xiao</span>
+            <span class="affiliation">(National University of Singapore)</span>,
+            <span class="author-name">Beng Chin Ooi</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">76</div>
+      <div>
+        <div class="title">TrajRetrieve: Structured Segment Retrieval from Agent Trajectories</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zeli Guan</span>
+            <span class="affiliation">(Beijing University of Posts and Telecommunications)</span>,
+            <span class="author-name">Yawen Li*</span>
+            <span class="affiliation">(Beijing University of Posts and Telecommunications)</span>,
+            <span class="author-name">Zhe Xue</span>
+            <span class="affiliation">(Beijing University of Posts and Telecommunications)</span>,
+            <span class="author-name">Ming Weng</span>
+            <span class="affiliation">(Guangxi University of Finance and Economic)</span>,
+            <span class="author-name">Meiyu Liang</span>
+            <span class="affiliation">(Beijing University of Posts and Telecommunications)</span>,
+            <span class="author-name">Wendong Wang</span>
+            <span class="affiliation">(Beijing University of Posts and Telecommunications)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">77</div>
+      <div>
+        <div class="title">CastorTS: Causality-Guided Siamese Pretraining Model for Efficient Time Series Forecasting</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Rui AN*</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Haohao Qu</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Wenqi Fan</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Xuequn Shang</span>
+            <span class="affiliation">(Northwestern Polytechnical University)</span>,
+            <span class="author-name">Qing Li</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">78</div>
+      <div>
+        <div class="title">Vora: A Vector-Based Engine for Scalable GPU-Accelerated Subgraph Query Processing</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Guanghua Li*</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology (Guangzhou))</span>,
+            <span class="author-name">Hao Zhang</span>
+            <span class="affiliation">(The Chinese University of Hong Kong)</span>,
+            <span class="author-name">Qiong Luo</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">79</div>
+      <div>
+        <div class="title">Tracing the Unseen: Trajectory Recovery from Cellular Records</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jingyu Zhu</span>
+            <span class="affiliation">(Nankai University)</span>,
+            <span class="author-name">Yu Sun*</span>
+            <span class="affiliation">(Nankai University)</span>,
+            <span class="author-name">Shaoxu Song</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Dewang Ren</span>
+            <span class="affiliation">(Xi&#x27;an Aeronautics Computing Technique Research Institute, AVIC)</span>,
+            <span class="author-name">Junhui Liu</span>
+            <span class="affiliation">(Xi&#x27;an Aeronautics Computing Technique Research Institute, AVIC)</span>,
+            <span class="author-name">Xiaojie Yuan</span>
+            <span class="affiliation">(Nankai University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">80</div>
+      <div>
+        <div class="title">QASP: Query-Adaptive Robust Vector Search Policy</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Hakan Ferhatosmanoglu*</span>
+            <span class="affiliation">(Amazon and University of Warwick)</span>,
+            <span class="author-name">Kushal Kumar</span>
+            <span class="affiliation">(Amazon)</span>,
+            <span class="author-name">Tal Wagner</span>
+            <span class="affiliation">(Amazon and Tel-Aviv University)</span>,
+            <span class="author-name">Andy Warfield</span>
+            <span class="affiliation">(Amazon)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">81</div>
+      <div>
+        <div class="title">DMTSE: Tucker Self-Expression for Scalable Deep Multi-View Network Traffic Clustering</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Wei Lin*</span>
+            <span class="affiliation">(Hunan University)</span>,
+            <span class="author-name">Kun Xie</span>
+            <span class="affiliation">(Hunan University)</span>,
+            <span class="author-name">Li Xu</span>
+            <span class="affiliation">(Fujian Normal University)</span>,
+            <span class="author-name">Gaogang Xie</span>
+            <span class="affiliation">(Chinese Academy of Sciences)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">82</div>
+      <div>
+        <div class="title">[Experiment, Analysis, and Benchmark] Pitfalls in Learned Indexes: Uncovering the Risks of Chasing Time Performance Alone</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jiake Ge</span>
+            <span class="affiliation">(Tianjin University)</span>,
+            <span class="author-name">Hui Wang*</span>
+            <span class="affiliation">(Tianjin University)</span>,
+            <span class="author-name">Xin Wang</span>
+            <span class="affiliation">(Tianjin University)</span>,
+            <span class="author-name">Xueli Liu</span>
+            <span class="affiliation">(Tianjin University)</span>,
+            <span class="author-name">Yu Wang</span>
+            <span class="affiliation">(Tianjin University)</span>,
+            <span class="author-name">Yunpeng Chai</span>
+            <span class="affiliation">(Renmin University of China)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">83</div>
+      <div>
+        <div class="title">Efficient Approximate Nearest Neighbor Search under Multi-Attribute Range Filter</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yuanhang Yu*</span>
+            <span class="affiliation">(Tongji University)</span>,
+            <span class="author-name">Dawei Cheng</span>
+            <span class="affiliation">(Tongji University)</span>,
+            <span class="author-name">Ying Zhang</span>
+            <span class="affiliation">(Zhejiang Gongshang University)</span>,
+            <span class="author-name">Lu Qin</span>
+            <span class="affiliation">(University of Technology Sydney)</span>,
+            <span class="author-name">Wenjie Zhang</span>
+            <span class="affiliation">(University of New South Wales)</span>,
+            <span class="author-name">Xuemin Lin</span>
+            <span class="affiliation">(The Chinese University of Hong Kong)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">84</div>
+      <div>
+        <div class="title">QCATS: Query Context-Aware Transformer Slicing for Efficient Predictive Query Processing</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yueying Li</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Zhongle Xie*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Ke Chen</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Lidan Shou</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">85</div>
+      <div>
+        <div class="title">LG-DCD: Evolution-Aware Local Differential Privacy for Dynamic Community Detection over Graphs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Xinyue LI*</span>
+            <span class="affiliation">(Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Qingqing Ye</span>
+            <span class="affiliation">(Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Haibo Hu</span>
+            <span class="affiliation">(Hong Kong Polytechnic University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">86</div>
+      <div>
+        <div class="title">From Chase to Meta-Chase</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Wenfei Fan</span>
+            <span class="affiliation">(Shenzhen Institute of Computing Sciences)</span>,
+            <span class="author-name">Xiaomeng Luo</span>
+            <span class="affiliation">(Beihang Univ.)</span>,
+            <span class="author-name">Ping Lu*</span>
+            <span class="affiliation">(Beihang Univ.)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">87</div>
+      <div>
+        <div class="title">DiskRange: I/O-Efficient Large-Scale Vector Range Search via Cascade Pruning</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Dong Jiang</span>
+            <span class="affiliation">(Northeastern University)</span>,
+            <span class="author-name">Runzhong Li</span>
+            <span class="affiliation">(Southern University of Science and Technology)</span>,
+            <span class="author-name">Yujun He</span>
+            <span class="affiliation">(Southern University of Science and Technology)</span>,
+            <span class="author-name">Weijian Chen</span>
+            <span class="affiliation">(Southern University of Science and Technology)</span>,
+            <span class="author-name">Leong Hou U</span>
+            <span class="affiliation">(University of Macau)</span>,
+            <span class="author-name">Qi Chen</span>
+            <span class="affiliation">(Wuhan Dameng Database Company Limited)</span>,
+            <span class="author-name">Qiaomu Shen</span>
+            <span class="affiliation">(Beijing Institute of Technology, Zhuhai)</span>,
+            <span class="author-name">Ye Yuan</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Bo Tang*</span>
+            <span class="affiliation">(Southern University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">88</div>
+      <div>
+        <div class="title">CITBench: A Comprehensive Benchmark for Interactive Tabular Data Processing with LLMs</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zihan Nan*</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Yang Gu</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Wei Liu</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Xi Yan</span>
+            <span class="affiliation">(Institute of Computing Technology, Chinese Academy of Sciences)</span>,
+            <span class="author-name">Zhou Liu</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Hao Liang</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Wentao Zhang</span>
+            <span class="affiliation">(Peking University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">89</div>
+      <div>
+        <div class="title">Effective Anomaly Detection for  Automatic Weather Station Data</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Han Shi</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Xiaoye Miao*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Bin Li</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Yan Zhang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Jianwei Yin</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">90</div>
+      <div>
+        <div class="title">Range-Filtering Approximate Nearest Neighbor Search via First-Split Range Decomposition and Suffix-Prefix Indexing</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yufan Xiang</span>
+            <span class="affiliation">(University of Wisconsin–Madison)</span>,
+            <span class="author-name">Junyao Wang</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Chen Feng</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Jieming Shi*</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">91</div>
+      <div>
+        <div class="title">Entity Resolution via Batched Oracle Queries</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Lorenzo Balzotti*</span>
+            <span class="affiliation">(Sapienza University of Rome)</span>,
+            <span class="author-name">Donatella Firmani</span>
+            <span class="affiliation">(Sapienza University of Rome)</span>,
+            <span class="author-name">Luca Gagliardelli</span>
+            <span class="affiliation">(Università eCampus)</span>,
+            <span class="author-name">Giovanni Simonini</span>
+            <span class="affiliation">(University of Modena and Reggio Emilia)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">92</div>
+      <div>
+        <div class="title">TCC-RAG: Temporal Causal Chain–Guided RAG for Temporal Knowledge Graph Question Answering</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Xinxun Zhang*</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Yuxiang Wang</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Shanshan Feng</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Jun Zhang</span>
+            <span class="affiliation">(Tencent Inc)</span>,
+            <span class="author-name">Tieyun Qian</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Binghang Yuan</span>
+            <span class="affiliation">(Hong Kong University of Science and Technology)</span>,
+            <span class="author-name">Kai Yin</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Xiao Yan</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Jiawei Jiang</span>
+            <span class="affiliation">(Wuhan University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">93</div>
+      <div>
+        <div class="title">[Experiment, Analysis, and Benchmark] SemQueryBench: A Benchmark for Diagnosing Cross-Database Text-to-SQL Transfer</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yongnan Chen*</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Mei Zhang</span>
+            <span class="affiliation">(Kunlun Digital Technology Co., Ltd., CNPC)</span>,
+            <span class="author-name">Shiyu Wang</span>
+            <span class="affiliation">(Kunlun Digital Technology Co., Ltd., CNPC)</span>,
+            <span class="author-name">Zhikun Lv</span>
+            <span class="affiliation">(China University of Petroleum (East China))</span>,
+            <span class="author-name">Fang Jing</span>
+            <span class="affiliation">(Kunlun Digital Technology Co., Ltd., CNPC)</span>,
+            <span class="author-name">Ruizhe Qu</span>
+            <span class="affiliation">(Beijing Institute of Technology)</span>,
+            <span class="author-name">Shouhuan Li</span>
+            <span class="affiliation">(University College London)</span>,
+            <span class="author-name">Zhuo Chang</span>
+            <span class="affiliation">(Nanyan Technological University)</span>,
+            <span class="author-name">Bin Cui</span>
+            <span class="affiliation">(Peking University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">94</div>
+      <div>
+        <div class="title">Parallel Oblivious Acyclic Joins for TEE-based Encrypted Databases</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Sen Zhao</span>
+            <span class="affiliation">(Xidian University)</span>,
+            <span class="author-name">Binbin Gu</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Haibo Hu</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Xiaofeng Chen*</span>
+            <span class="affiliation">(Xidian University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">95</div>
+      <div>
+        <div class="title">Adaptive Hybrid Tensor Cores Scheduling for Efficient Sparse Data Processing</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yukang Dong</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Ziyuan Shen</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Xiangwenxin Meng</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Zhenghang Liu</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Weirui Wan</span>
+            <span class="affiliation">(University of Michigan)</span>,
+            <span class="author-name">Zeming Zhao</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Wenbin Jiang*</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Hai Jin</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">96</div>
+      <div>
+        <div class="title">EASTAR: Event-Anchored Semantic and Task-Adaptive Region Representation Learning</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Peng Liang*</span>
+            <span class="affiliation">(Shenzhen University)</span>,
+            <span class="author-name">Genan Dai</span>
+            <span class="affiliation">(Shenzhen Technology University)</span>,
+            <span class="author-name">Bowen Zhang</span>
+            <span class="affiliation">(Shenzhen Technology University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">97</div>
+      <div>
+        <div class="title">M^2Net: Unifying Scale-Specific Structures and Prototype Decomposition for Spatial-Temporal Forecasting</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Chengyang Zhou*</span>
+            <span class="affiliation">(Jilin University)</span>,
+            <span class="author-name">Zijian Zhang</span>
+            <span class="affiliation">(Jilin University)</span>,
+            <span class="author-name">Hao Miao</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Chunxu Zhang</span>
+            <span class="affiliation">(Jilin University)</span>,
+            <span class="author-name">Ziming Liu</span>
+            <span class="affiliation">(Jilin University)</span>,
+            <span class="author-name">Chao Tang</span>
+            <span class="affiliation">(Jilin University)</span>,
+            <span class="author-name">Juncheng Hu</span>
+            <span class="affiliation">(Jilin University)</span>,
+            <span class="author-name">Irwin King</span>
+            <span class="affiliation">(The Chinese University of Hong Kong)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">98</div>
+      <div>
+        <div class="title">Bridging the Gap: Enabling Natural Language Queries for NoSQL Databases through Text-to-NoSQL Translation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jinwei Lu</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Jiawei Lu</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Chen Zhang</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Zhiqian Qin</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Haodi Zhang</span>
+            <span class="affiliation">(Shenzhen University)</span>,
+            <span class="author-name">Yuanfeng Song*</span>
+            <span class="affiliation">(Webank)</span>,
+            <span class="author-name">Raymond Chi-Wing Wong</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">99</div>
+      <div>
+        <div class="title">When Correlations Mislead: Confounder-Aware Multi-View Urban Region Representation Learning</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Sean Bin Yang*</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Ying Sun</span>
+            <span class="affiliation">(Chongqing University of Posts and Telecommunications)</span>,
+            <span class="author-name">Zongyi Xu</span>
+            <span class="affiliation">(Chongqing University of Posts and Telecommunications)</span>,
+            <span class="author-name">Tung Kieu</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Jilin Hu</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Bin Yang</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Kristian Torp</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Hua Lu</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Torben Bach Pedersen</span>
+            <span class="affiliation">(Aalborg University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">100</div>
+      <div>
+        <div class="title">XOver: Execution-Calibrated Exemplar Contextualization for Multilingual Text-to-OverpassQL on OpenStreetMap</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Zhuoyue WAN</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Jiaqi Fan</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Hwanhee Kim</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Chen Jason Zhang</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Shuaimin Li</span>
+            <span class="affiliation">(Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences)</span>,
+            <span class="author-name">Yuanfeng Song*</span>
+            <span class="affiliation">(ByteDance)</span>,
+            <span class="author-name">Haoyang Li</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Xiao-Yong Wei</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Raymond Chi-Wing Wong</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">101</div>
+      <div>
+        <div class="title">CC-Time: Cross-Model and Cross-Modality Time Series Forecasting</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Peng Chen*</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Yihang Wang</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Yang Shu</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Yunyao Cheng</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Kai Zhao</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Zhongwen Rao</span>
+            <span class="affiliation">(Noah’s Ark Lab)</span>,
+            <span class="author-name">Lujia Pan</span>
+            <span class="affiliation">(Noah’s Ark Lab)</span>,
+            <span class="author-name">Bin Yang</span>
+            <span class="affiliation">(East China Normal University)</span>,
+            <span class="author-name">Chenjuan Guo</span>
+            <span class="affiliation">(East China Normal University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">102</div>
+      <div>
+        <div class="title">HMGCN: Huber-MCP Reweighted Graph Convolutional Network for Robust Recommendation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yunkang Deng</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Shenghao Liu*</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Qiankun Zhang</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Wei Xiang</span>
+            <span class="affiliation">(Central China Normal University)</span>,
+            <span class="author-name">Xianjun Deng</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">103</div>
+      <div>
+        <div class="title">AdaptiveIMI: Efficient KV Cache Management for Long-Context LLM Inference with Limited GPU Resources</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jiayu Yuan</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Haixin Wang</span>
+            <span class="affiliation">(Wuhan University of Technology)</span>,
+            <span class="author-name">Jiaxu Zhu</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>,
+            <span class="author-name">Ming Dong</span>
+            <span class="affiliation">(Wuhan University of Technology)</span>,
+            <span class="author-name">Ziang Xu</span>
+            <span class="affiliation">(Wuhan Britain-China School)</span>,
+            <span class="author-name">Bolong Zheng*</span>
+            <span class="affiliation">(Huazhong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">104</div>
+      <div>
+        <div class="title">FBCSC: Causal Structure Cleaning for Low-Resolution Multivariate Time Series</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jiaxin Gu*</span>
+            <span class="affiliation">(School of Computer and Information Technology,Shanxi University)</span>,
+            <span class="author-name">Fuyuan Cao</span>
+            <span class="affiliation">(School of Computer and Information Technology,Shanxi University)</span>,
+            <span class="author-name">Jiye Liang</span>
+            <span class="affiliation">(School of Computer and Information Technology,Shanxi University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">105</div>
+      <div>
+        <div class="title">Multimodal Event-Aware Workload Prediction for Cloud Database Systems</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Kaiqi Ding*</span>
+            <span class="affiliation">(Peking University)</span>,
+            <span class="author-name">Yanzhao Qin</span>
+            <span class="affiliation">(peking university)</span>,
+            <span class="author-name">Kaigui Bian</span>
+            <span class="affiliation">(Peking university)</span>,
+            <span class="author-name">Bin Cui</span>
+            <span class="affiliation">(Peking university)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">106</div>
+      <div>
+        <div class="title">LYNX: Analytical Program Synthesis via Grounding and Closed-Loop Refinement</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Ruichen Xia</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Xiao Han</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Dingyu Yang*</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Luwei Yang</span>
+            <span class="affiliation">(Geely Group)</span>,
+            <span class="author-name">Sai Wu</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Dongxiang Zhang</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Binhui Yao</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Gang Chen</span>
+            <span class="affiliation">(Zhejiang University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">107</div>
+      <div>
+        <div class="title">Learned Intrinsic Dimensionality Representations for Efficient Approximate Nearest Neighbor Search</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Baohua Wu</span>
+            <span class="affiliation">(Central South University)</span>,
+            <span class="author-name">Yuhang Zhang</span>
+            <span class="affiliation">(University of Chinese Academy of Sciences)</span>,
+            <span class="author-name">Dongjing Miao</span>
+            <span class="affiliation">(Harbin Institute of Technology)</span>,
+            <span class="author-name">Lingli Li</span>
+            <span class="affiliation">(Heilongjiang University)</span>,
+            <span class="author-name">Zhifang Liao*</span>
+            <span class="affiliation">(Central South University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">108</div>
+      <div>
+        <div class="title">Text-to-RLS: Towards Constraint-Anchored Row-Level Security in Natural Language Database Interfaces</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jiaqi FAN</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Zhuoyue WAN</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Chen Zhang</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Xiao-Yong Wei</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Haoyang Li</span>
+            <span class="affiliation">(The Hong Kong Polytechnic University)</span>,
+            <span class="author-name">Yuanfeng Song*</span>
+            <span class="affiliation">(ByteDance)</span>,
+            <span class="author-name">Wangze Ni</span>
+            <span class="affiliation">(Zhejiang University)</span>,
+            <span class="author-name">Raymond Chi-Wing Wong</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">109</div>
+      <div>
+        <div class="title">Beyond Majority Voting: Hint-guided SQL Selection with LLM</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Shiwen Wu*</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>,
+            <span class="author-name">Yue Pang</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>,
+            <span class="author-name">Sau Lai YIP</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>,
+            <span class="author-name">Jingzhi Fang</span>
+            <span class="affiliation">(Independent researcher)</span>,
+            <span class="author-name">Xiaofang Zhou</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">110</div>
+      <div>
+        <div class="title">Data Poisoning Attacks to Locally Differentially Private Triangle Counting Protocols</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Tingxuan Han*</span>
+            <span class="affiliation">(Nanjing University)</span>,
+            <span class="author-name">Wei Tong</span>
+            <span class="affiliation">(Nanjing University)</span>,
+            <span class="author-name">Zijian Wang</span>
+            <span class="affiliation">(Nanjing University)</span>,
+            <span class="author-name">Sheng Zhong</span>
+            <span class="affiliation">(Nanjing University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">111</div>
+      <div>
+        <div class="title">Complex Task Assignment in Spatial Crowdsourcing via LLM-Guided Learning</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Linshen Luan</span>
+            <span class="affiliation">(Zhengzhou University)</span>,
+            <span class="author-name">Jiaqi Wu</span>
+            <span class="affiliation">(Zhengzhou University)</span>,
+            <span class="author-name">Shuo He</span>
+            <span class="affiliation">(Zhengzhou University)</span>,
+            <span class="author-name">Xiao Zhang</span>
+            <span class="affiliation">(Zhengzhou University)</span>,
+            <span class="author-name">Yafei Li*</span>
+            <span class="affiliation">(Zhengzhou University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">112</div>
+      <div>
+        <div class="title">GRASP-SQL: Graph-Aware Rationale Alignment and Structural Patching for Efficient Text-to-SQL</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Songjie Niu*</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Yiming Yang</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Yize Geng</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Mengyu Ge</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Huiyan Chao</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Wentao Han</span>
+            <span class="affiliation">(Tsinghua University)</span>,
+            <span class="author-name">Shimin Chen</span>
+            <span class="affiliation">(Institute of Computing Technology, Chinese Academy of Sciences)</span>,
+            <span class="author-name">Wenguang Chen</span>
+            <span class="affiliation">(Tsinghua University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">113</div>
+      <div>
+        <div class="title">Fine-Grained Modality Unlearning for Multimodal Recommender Systems via Gated Deletion</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Wenhan Wu*</span>
+            <span class="affiliation">(Wuhan University)</span>,
+            <span class="author-name">Chuang Hu</span>
+            <span class="affiliation">(University of Macau)</span>,
+            <span class="author-name">Jingling Yuan</span>
+            <span class="affiliation">(Wuhan University of Technology)</span>,
+            <span class="author-name">Jiawei Jiang</span>
+            <span class="affiliation">(Wuhan University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">114</div>
+      <div>
+        <div class="title">ECHO: Equivalence Class-Based Hypergraph Modeling for Distributed Materialized View Selection</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Kaiqi Liu*</span>
+            <span class="affiliation">(Kunming University of Science and Technology)</span>,
+            <span class="author-name">Jinguo You</span>
+            <span class="affiliation">(Kunming University of Science and Technology)</span>,
+            <span class="author-name">Wanting Fu</span>
+            <span class="affiliation">(Kunming University of Science and Technology)</span>,
+            <span class="author-name">Cuiwei Wang</span>
+            <span class="affiliation">(Kunming University of Science and Technology)</span>,
+            <span class="author-name">Zhipeng Ding</span>
+            <span class="affiliation">(Kunming University of Science and Technology)</span>,
+            <span class="author-name">Bin Yao</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">115</div>
+      <div>
+        <div class="title">[Experiment, Analysis, and Benchmark] Benchmarking Content-Defined Chunking Algorithms for Data Deduplication</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Marcel Gregoriadis*</span>
+            <span class="affiliation">(TU Delft)</span>,
+            <span class="author-name">Leonhard Balduf</span>
+            <span class="affiliation">(TU Darmstadt)</span>,
+            <span class="author-name">Björn Scheuermann</span>
+            <span class="affiliation">(TU Darmstadt)</span>,
+            <span class="author-name">Johan Pouwelse</span>
+            <span class="affiliation">(TU Delft)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">116</div>
+      <div>
+        <div class="title">Uncertainty-Aware Online Ensemble Transformer for Accurate Cloud Workload Forecasting in Predictive Auto-Scaling</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Jiadong Chen*</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Xiao He</span>
+            <span class="affiliation">(Bytedance)</span>,
+            <span class="author-name">Mohan Gao</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Hengyu Ye</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>,
+            <span class="author-name">Fuxin Jiang</span>
+            <span class="affiliation">(Bytedance)</span>,
+            <span class="author-name">Xiaofeng Gao</span>
+            <span class="affiliation">(Shanghai Jiao Tong University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">117</div>
+      <div>
+        <div class="title">Visualization &amp; Search over Time Series Aggregates</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Vassilis Stamatopoulos*</span>
+            <span class="affiliation">(Athena Research Center)</span>,
+            <span class="author-name">Stavros Maroulis</span>
+            <span class="affiliation">(Athena Research Center)</span>,
+            <span class="author-name">George Papastefanatos</span>
+            <span class="affiliation">(Athena Research Center)</span>,
+            <span class="author-name">Panos Vassiliadis</span>
+            <span class="affiliation">(University of Ioannina)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">118</div>
+      <div>
+        <div class="title">Risk-aware Road-network Trajectory Synthesis under Local Differential Privacy</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Hongzhen Xiang*</span>
+            <span class="affiliation">(Xi’an Jiaotong University)</span>,
+            <span class="author-name">Chenxu Wang</span>
+            <span class="affiliation">(Xi’an Jiaotong University)</span>,
+            <span class="author-name">Yumeng Song</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Tao Qin</span>
+            <span class="affiliation">(Xi’an Jiaotong University)</span>,
+            <span class="author-name">Yushuai Li</span>
+            <span class="affiliation">(Aalborg University)</span>,
+            <span class="author-name">Pinghui Wang</span>
+            <span class="affiliation">(Xi’an Jiaotong University)</span>,
+            <span class="author-name">Wei Wang</span>
+            <span class="affiliation">(Xi’an Jiaotong University)</span>,
+            <span class="author-name">Tianyi Li</span>
+            <span class="affiliation">(Aalborg University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">119</div>
+      <div>
+        <div class="title">Compact and Efficient Indexes for Learned Sparse Retrieval</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Franco Maria Nardini</span>
+            <span class="affiliation">(ISTI-CNR)</span>,
+            <span class="author-name">Luca Rizzo</span>
+            <span class="affiliation">(University of Pisa)</span>,
+            <span class="author-name">Cosimo Rulli*</span>
+            <span class="affiliation">(ISTI-CNR)</span>,
+            <span class="author-name">Rossano Venturini</span>
+            <span class="affiliation">(University of Pisa)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">120</div>
+      <div>
+        <div class="title">DHH-SQL: Dynamic Schema Linking via Heterogeneous Hypergraph for Text-to-SQL</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yuxuan Du*</span>
+            <span class="affiliation">(Northwestern Polytechnical University)</span>,
+            <span class="author-name">Qun Chen</span>
+            <span class="affiliation">(Northwestern Polytechnical University)</span>,
+            <span class="author-name">Shuhua Liang</span>
+            <span class="affiliation">(Northwestern Polytechnical University)</span>,
+            <span class="author-name">Zhonghua Wu</span>
+            <span class="affiliation">(Northwestern Polytechnical University)</span>,
+            <span class="author-name">Tianyu Cheng</span>
+            <span class="affiliation">(Northwestern Polytechnical University)</span>,
+            <span class="author-name">Wenjie Liu</span>
+            <span class="affiliation">(Northwestern Polytechnical University)</span>,
+            <span class="author-name">Zhanhuai Li</span>
+            <span class="affiliation">(Northwestern Polytechnical University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">121</div>
+      <div>
+        <div class="title">Bounding Global Fairness via Fair Clustering: A Locality-Aware Framework for Fair Classification</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Nico Lässig*</span>
+            <span class="affiliation">(University of Stuttgart)</span>,
+            <span class="author-name">Melanie Herschel</span>
+            <span class="affiliation">(Nanyang Technological University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">122</div>
+      <div>
+        <div class="title">Breaking the Noise Cascade: A Tri-Stage Denoising Retrieval Framework for Robust GraphRAG</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Yifan Song*</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology(Guangzhou))</span>,
+            <span class="author-name">Xingjian Tao</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology(Guangzhou))</span>,
+            <span class="author-name">Changan Liu</span>
+            <span class="affiliation">(Nanyang Technological University)</span>,
+            <span class="author-name">Zhicheng Yang</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology(Guangzhou))</span>,
+            <span class="author-name">Jing Tang</span>
+            <span class="affiliation">(The Hong Kong University of Science and Technology(Guangzhou) &amp; The Hong Kong University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">123</div>
+      <div>
+        <div class="title">Cadence: Real-Time Sustained Stable Item Lookup in High-Speed Data Streams</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Weihe Li*</span>
+            <span class="affiliation">(University of Edinburgh)</span>,
+            <span class="author-name">Jiawei Huang</span>
+            <span class="affiliation">(Central South University)</span>,
+            <span class="author-name">Tianyue Chu</span>
+            <span class="affiliation">(Telefónica Research)</span>,
+            <span class="author-name">Jianxin Wang</span>
+            <span class="affiliation">(Central South University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">124</div>
+      <div>
+        <div class="title">Covering the Unseen: Information Demand Coverage Optimization for Retrieval-Augmented Generation</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Bingxue Zhang</span>
+            <span class="affiliation">(University of Shanghai for Science and Technology)</span>,
+            <span class="author-name">Jianying Jia</span>
+            <span class="affiliation">(University of Shanghai for Science and Technology)</span>,
+            <span class="author-name">Feida Zhu*</span>
+            <span class="affiliation">(Singapore Management University)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">125</div>
+      <div>
+        <div class="title">HotK: Secure Top-K Query Answering over Horizontal Data Federations</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Junzhou Su</span>
+            <span class="affiliation">(University of Minnesota, Twin Cities)</span>,
+            <span class="author-name">John Carruth</span>
+            <span class="affiliation">(University of Minnesota, Twin Cities)</span>,
+            <span class="author-name">Guohui Guan</span>
+            <span class="affiliation">(University of Minnesota, Twin Cities)</span>,
+            <span class="author-name">Chang Ge*</span>
+            <span class="affiliation">(University of Minnesota, Twin Cities)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">126</div>
+      <div>
+        <div class="title">HCFM: Helmholtz Component Flow Matching for Time Series Anomaly Detection</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Shyam Sundar Saravanan</span>
+            <span class="affiliation">(Missouri University of Science and Technology)</span>,
+            <span class="author-name">Thomas Luo</span>
+            <span class="affiliation">(University of Kentucky)</span>,
+            <span class="author-name">Sanjay Madria*</span>
+            <span class="affiliation">(Missouri University of Science and Technology)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="paper-item">
+      <div class="number-column">127</div>
+      <div>
+        <div class="title">OnPair: Short String Compression for Fast Random Access</div>
+        <div class="authors">
+          <div class="author-line">
+            <span class="author-name">Francesco Gargiulo*</span>
+            <span class="affiliation">(University of Pisa)</span>,
+            <span class="author-name">Rossano Venturini</span>
+            <span class="affiliation">(University of Pisa)</span>
+          </div>
+        </div>
+      </div>
+    </li>
+
+</section>
+
+</main>
+
+<footer>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <!-- <span><img src="img/icde2026_footer.png"></span>-->
+    <span>
+      <p>
+        <span>43<sup>rd</span> IEEE International Conference on Data Engineering, Copenhagen, Denmark - May 17-21, 2027.<br>
+          &#169; IEEE ICDE 2027. All rights reserved. Use of this website signifies your agreement to the 
+            <a href="http://www.ieee.org/site_terms_conditions.html" target="_blank" rel="noopener" style="color: #c51c2b;">IEEE Terms and Conditions</a>. <br>
+            A public charity, IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.    
+
+      </p>      
+    </span>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="css/min.css">
+<link rel="stylesheet" href="css/extra.css"> 
+<link rel="stylesheet" href="css/paper.css"> 
+<script async src="js/min.js"></script>
+
+<script async src="https://platform.twitter.com/widgets.js"></script>
+<script>
+    (function() {
+        var last = 0,
+            docBody = document.body,
+            header = document.querySelector('body>header'),
+            nav = header && header.querySelector('nav'),
+            requestAnimationFrame = window.requestAnimationFrame || function(callback, element) {
+                var now = Date.now(),
+                    next = Math.max(0, 16 - (now - last)),
+                    id = window.setTimeout(function() {
+                        callback(now + next);
+                    }, next);
+                last = now + next;
+                return id;
+            },
+            cancelAnimationFrame = window.cancelAnimationFrame || function(id) {
+                clearTimeout(id);
+            },
+            update = function () {
+                if (!nav) return;
+
+                var isStatic = docBody.classList.contains('static');
+                if (header.getBoundingClientRect().bottom > 70) {
+                    if (isStatic) docBody.classList.remove('static');
+                } else if (!isStatic) docBody.classList.add('static');
+            },
+            lid;
+
+        window.addEventListener('scroll', function(e) {
+            if (lid) cancelAnimationFrame(lid);
+            lid = requestAnimationFrame(update);
+        });
+
+        update();
+    }());
+</script>
+</body>
+</html>
