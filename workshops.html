@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script language="javascript">
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZQ880VLVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6ZQ880VLVF');
+</script>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="http://localhost/icde/"> <!-- // CHANGE THIS BEFORE GOING LIVE -->
+
+<style>
+  body{visibility:hidden}
+  </style>
+  <link rel="icon" type="image/png" href="img/icde2026_logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <title>Workshops</title>
+    <meta name="description" content="" />
+
+<link rel="stylesheet" href="css/min.css">
+ <link rel="stylesheet" href="css/extra.css"> 
+</head>
+
+<body>
+
+  <header>
+    <div class="small-menu"><a class="hamburger"></a></div>
+    <div class="small-header">
+      <figure class="logo">
+        <a href="index.html"><img src="img/icde2027_logo_tiny.svg" alt="ICDE 2027 Copenhagen, Denmark"></a>
+      </figure>
+    </div>
+
+    <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <figure class="logo">
+        <img src="img/icde2027_logo_tiny.svg" alt="ICDE 2027 Copenhagen, Denmark">
+        <img src="img/icde2027_logo_tiny.svg" alt="ICDE 2027 Copenhagen, Denmark">
+      </figure>
+      <div>
+        General Information
+        <div class="menu">
+          <a href="index.html" itemprop="url"><span itemprop="name">Conference Overview</span></a>
+          <a href="officers.html" itemprop="url"><span itemprop="name">Conference Officers</span></a>
+          <a href="pc-chairs.html" itemprop="url"><span itemprop="name">Program Committees</span></a>
+        </div>
+      </div>
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;Conference Program&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="menu">
+         <a href="accepted-papers.html" itemprop="url"><span itemprop="name">Accepted Research Papers</span></a>
+         <!--
+          <a href="program.html" itemprop="url"><span itemprop="name">Program Overview</span></a>
+          <a href="keynotes.html" itemprop="url"><span itemprop="name">Keynotes</span></a>
+          <a href="panel.html" itemprop="url"><span itemprop="name">Panel</span></a>
+          <a href="phdsymposium.html" itemprop="url"><span itemprop="name">PhD Symposium</span></a>
+        -->  <a href="workshops.html" itemprop="url"><span itemprop="name">Workshops</span></a>
+        </div>
+      </div>
+      <div>
+        Call for Contributions
+        <div class="menu">
+          <a href="cf-research-papers.html" itemprop="url"><span itemprop="name">Research Papers</span></a>  
+           <a href="cf-industry-track.html" itemprop="url"><span itemprop="name">Industry and Application</span></a>
+           <a href="cf-future.html" itemprop="url"><span itemprop="name">Data Engineering <br>Future Technologies</span></a>
+           <hr>
+          <a href="cf-demonstrations.html" itemprop="url"><span itemprop="name">Demonstrations</span></a>
+          
+          <a href="cf-workshop-proposals.html" itemprop="url"><span itemprop="name">Workshop Proposals</span></a>
+        
+          <a href="cf-tutorials.html" itemprop="url"><span itemprop="name">Tutorials</span></a>        
+          <a href="cf-tkde-poster.html" itemprop="url"><span itemprop="name">TKDE Poster</span></a>          
+          <a href="cf-phd-symposium.html" itemprop="url"><span itemprop="name">Ph.D. Symposium</span></a>
+          <!--
+          <a href="cf-lightning-talks.html" itemprop="url"><span itemprop="name">Lightning Talks</span></a>-->
+        
+        </div>
+      </div>
+      <div>
+        Participant Information
+        <!-- <div class="menu">
+          <a href="registration.html" itemprop="url"><span itemprop="name">Registration</span></a>
+          <a href="venue.html" itemprop="url"><span itemprop="name">Conference Venue</span></a>
+          <a href="hotel.html" itemprop="url"><span itemprop="name">Hotel Options</span></a>
+          <a href="local-attractions.html" itemprop="url"><span itemprop="name">Local Attractions</span></a>
+          <a href="travel-grants.html" itemprop="url"><span itemprop="name">Student Travel Grants</span></a>
+          <a href="transportation.html" itemprop="url"><span itemprop="name">Transportation</span></a>
+
+        </div> -->
+      </div>
+
+      <div>
+        Dates &amp; Guidelines
+        <div class="menu">
+          <a href="important-dates.html" itemprop="url"><span itemprop="name">Important Dates</span></a>
+          <hr />
+          <!-- <a href="formatting-guidelines.html" itemprop="url"><span itemprop="name">Formatting Guidelines</span></a> -->
+          <a href="submission-guidelines.html" itemprop="url"><span itemprop="name">Submission Guidelines</span></a>
+        </div>
+      </div>
+      <div>
+        Sponsorship
+        <div class="menu">
+          
+          <a href="sponsorship-opportunities.html" itemprop="url"><span itemprop="name">Opportunities</span></a>
+        
+          <!-- <a href="sponsorship-faq.html" itemprop="url"><span itemprop="name">Sponsorship FAQ</span></a> -->
+        </div>
+      </div>
+
+    </nav>
+    <section style="text-align: center;" class="carousel small"     data-images='[
+    {"i":"./img/copenhagen/copenhagen1.jpg"},
+    {"i":"./img/copenhagen/copenhagen2.jpg"},
+    {"i":"./img/copenhagen/copenhagen3.jpg"},
+    {"i":"./img/copenhagen/copenhagen4.jpg"}
+  ]'>
+  <span style="text-align: center; display: block;">43<sup>rd</sup> IEEE International Conference on Data Engineering (ICDE)</span>
+  <span style="background: #c51c2b;">Copenhagen, Denmark - May 17 -21, 2027</span>
+  <div data-url="./img/copenhagen/copenhagen1.jpg" style="background-image: url(&quot;./img/copenhagen/copenhagen1.jpg&quot;); opacity: 1;"></div>
+      </div>
+    </section>
+
+  </header>
+
+<main class="body">
+    <style>
+     .boxstyle  {
+        border: 0;
+        background: #eee;
+        color: #383838;
+        display: block;
+        height: 300px;
+        overflow-y: auto;
+        padding: 5px;
+        border-radius:5px;
+      }
+    </style>
+<section class="important-dates" style="font-size: 18px; padding: 0 50px 150px 0;">
+  <br />
+  
+  <h2 style="color: #c51c2b;">Accepted Workshops</h2>
+<table style="width: 100%; vertical-align: middle; border-collapse: collapse; margin-bottom: 30px;">
+    <thead style="background: rgb(223, 233, 245);">
+        <tr>
+            <th style="width: 1%; padding: 8px; border: 1px solid #ddd;"><strong>#</strong></th>
+            <th style="width: 45%; padding: 8px; border: 1px solid #ddd;">Title/Topic and Organizers</th>
+            <th style="width: 2%; padding: 8px; border: 1px solid #ddd;">Length</th>
+        </tr>
+    </thead>
+    <tr>
+        <td style="text-align: center; border: 1px solid #ddd;">1</td>
+        <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+            <span style="color: #366598;"><strong>International Workshop on Agentic AI for Urban Data Science (URGENT
+2027) </strong></span><br><br>
+            <strong>Organizers:</strong><br>
+            <ul style="line-height: 1.2em;">
+                <li>Yuxuan Liang</li>
+                <li>Harry Kai-Ho Chan</li>
+                <li>Raymond Chi-Wing Wong</li>
+                <li>Lei Chen</li>
+            </ul>
+            <strong>Workshop Website:</strong> <a href="" target="_blank"></a>
+        </td>
+        <td style="text-align: center; border: 1px solid #ddd;">Full</td>
+    </tr>
+  <!--
+    <tr>
+        <td style="text-align: center; border: 1px solid #ddd;">2</td>
+        <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+            <span style="color: #366598;"><strong>Data science for equality, inclusion and well-being challenges (DS4EIW 2026)</strong></span><br><br>
+            <strong>Organizers:</strong><br>
+            <ul style="line-height: 1.2em;">
+                <li>Genoveva Vargas-Solar, CNRS, France</li>
+                <li>Tania Cerquitelli, Politecnico di Torino, Italy</li>
+                <li>Salvatore Greco, Politecnico di Torino, Italy</li>
+                <li>Moreno Laquatra, Kore Uni. of Enna, Italy</li>
+            </ul>
+            <strong>Workshop Website:</strong> <a href="https://ds4eiw.github.io/2026/index.html" target="_blank">https://ds4eiw.github.io/2026/index.html</a>
+        </td>
+        <td style="text-align: center; border: 1px solid #ddd;">Full</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; border: 1px solid #ddd;">3</td>
+        <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+            <span style="color: #366598;"><strong>Sustainable Data Systems Meet Data Science (DSDS 2026)</strong></span><br><br>
+            <strong>Organizers:</strong><br>
+            <ul style="line-height: 1.2em;">
+                <li>Natalie Enright Jerger, U. Toronto, Canada</li>
+                <li>Bettina Kemme, McGill, Canada</li>
+                <li>Essam Mansour, Concordia, Canada</li>
+            </ul>
+            <strong>Workshop Website:</strong> <a href="https://sites.google.com/view/dsds26" target="_blank">https://sites.google.com/view/dsds26</a>
+        </td>
+        <td style="text-align: center; border: 1px solid #ddd;">Full</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; border: 1px solid #ddd;">-</td>
+      <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+        <span style="color: #366598;"><strong>Tamer Özsu Celebration Workshop</strong></span> <br><br>
+        <em>A special session celebrating the career and contributions of Prof. M. Tamer Özsu.</em>
+      </td>
+      <td style="text-align: center; border: 1px solid #ddd;">Full</td>
+    </tr>
+    <tr>
+        <td style="text-align: center; border: 1px solid #ddd;">4</td>
+        <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+            <span style="color: #366598;"><strong>LLM+Vector Data: Agentic RAG Edition</strong></span><br><br>
+            <strong>Organizers:</strong><br>
+            <ul style="line-height: 1.2em;">
+                <li>Arijit Khan, Bowling Green State University, USA</li>
+                <li>Yuyu Luo, HKUST, Hong Kong</li>
+                <li>M. Tamer Ozsu, UWaterloo, Canada</li>
+                <li>Danrui Qi, SFU, Canada</li>
+                <li>Jiannan Wang, Tsinghua Uni., China</li>
+            </ul>
+            <strong>Workshop Website:</strong> <a href="https://llmvdb2.github.io/" target="_blank">https://llmvdb2.github.io/</a>
+        </td>
+        <td style="text-align: center; border: 1px solid #ddd;">Full</td>
+    </tr>
+    <tr>
+          <td style="text-align: center; border: 1px solid #ddd;">5</td>
+          <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+              <span style="color: #366598;"><strong>Trends and Challenges in Industrial Data Systems Research(IDSR)</strong></span><br><br>
+              <strong>Organizers:</strong><br>
+              <ul style="line-height: 1.2em;">
+                  <li>Minos Garofalakis, ATHENA Research Center & TU Crete, Greece</li>
+                  <li>Guoliang Li, Tsinghua University, China</li>
+                  <li>Holger Pirk, Imperial College London,UK</li>
+                  <li>Kai Zeng, Huawei, China</li>
+              </ul>
+            <strong>Workshop Website:</strong> <a href="https://idsr-workshop.github.io/" target="_blank">https://idsr-workshop.github.io/</a>
+              
+          </td>
+          <td style="text-align: center; border: 1px solid #ddd;">Full</td>
+      </tr>
+    <tr>
+        <td style="text-align: center; border: 1px solid #ddd;">6</td>
+        <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+            <span style="color: #366598;"><strong>Beyond SQL: AI for Complex Data Management</strong></span><br><br>
+            <strong>Organizers:</strong><br>
+            <ul style="line-height: 1.2em;">
+                <li>Oktie Hassanzadeh, IBM Research, US</li>
+                <li>Liane Vogel, TU Darmstadt, Germany</li>
+                <li>Kavitha Srinivas, IBM Research, US</li>
+                <li>Sola Shirai, IBM Research, US</li>
+                <li>Liana Patel, Stanford University, US</li>
+            </ul>
+            <strong>Workshop Website:</strong> <a href="https://beyond-sql.github.io/" target="_blank">https://beyond-sql.github.io/</a>
+        </td>
+        <td style="text-align: center; border: 1px solid #ddd;">Half</td>
+    </tr>
+</table>
+
+<hr style="border: 0; height: 1px; background: #ccc; margin: 40px 0;">
+
+  <h2 style="color: #c51c2b;">Workshops (Friday, May 8, 2026)</h2>
+  <table style="width: 100%; vertical-align: middle; border-collapse: collapse;">
+      <thead style="background: rgb(223, 233, 245);">
+          <tr>
+              <th style="width: 1%; padding: 8px; border: 1px solid #ddd;"><strong>#</strong></th>
+              <th style="width: 45%; padding: 8px; border: 1px solid #ddd;">Title/Topic and Organizers</th>
+              <th style="width: 2%; padding: 8px; border: 1px solid #ddd;">Length</th>
+          </tr>
+      </thead>
+      <tr>
+          <td style="text-align: center; border: 1px solid #ddd;">1</td>
+          <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+              <span style="color: #366598;"><strong>HTAPSys: Workshop on Hybrid Transactional/Analytical Processing Systems</strong></span><br><br>
+              <strong>Organizers:</strong><br>
+              <ul style="line-height: 1.2em;">
+                  <li>Tianzheng Wang, SFU, Canada</li>
+                  <li>Xun Xue, Huawei, Canada</li>
+              </ul>
+              <strong>Workshop Website:</strong> <a href="https://sfu-dis.github.io/htapsys/" target="_blank">https://sfu-dis.github.io/htapsys/</a>
+          </td>
+          <td style="text-align: center; border: 1px solid #ddd;">Full</td>
+      </tr>
+      <tr>
+          <td style="text-align: center; border: 1px solid #ddd;">2</td>
+          <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+              <span style="color: #366598;"><strong>Knowledge and Data Engineering Meets Large Language Models: Challenges and Opportunities</strong></span><br><br>
+              <strong>Organizers:</strong><br>
+              <ul style="line-height: 1.2em;">
+                  <li>Jianzhong Qi, The University of Melbourne</li>
+                  <li>Wenqi Fan, The Hong Kong Polytechnic University, Hong Kong</li>
+                  <li>Qing Li, The Hong Kong Polytechnic University, Hong Kong</li>
+                  <li>Jilin Hu, East China Normal University, China</li>
+              </ul>
+              <strong>Workshop Website:</strong> <a href="https://kde-meets-llm.github.io/KDExLLM-ICDE2026/" target="_blank">https://kde-meets-llm.github.io/KDExLLM-ICDE2026/</a>
+          </td>
+          <td style="text-align: center; border: 1px solid #ddd;">Half</td>
+      </tr>
+      <tr>
+          <td style="text-align: center; border: 1px solid #ddd;">3</td>
+          <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+              <span style="color: #366598;"><strong>Databases and Machine Learning (DBML)</strong></span><br><br>
+              <strong>Organizers:</strong><br>
+              <ul style="line-height: 1.2em;">
+                  <li>Fatemeh Nargesian, URochester, USA</li>
+                  <li>Guillaume Lachaud, Ecole Polytechnique, France</li>
+              </ul>
+              <strong>Workshop Website:</strong> <a href="https://dataintelligencecrew.github.io/dbml26/" target="_blank">https://dataintelligencecrew.github.io/dbml26/</a>
+          </td>
+          <td style="text-align: center; border: 1px solid #ddd;">Half</td>
+      </tr>
+      <tr>
+          <td style="text-align: center; border: 1px solid #ddd;">4</td>
+          <td style="vertical-align: middle; padding: 10px; border: 1px solid #ddd;">
+              <span style="color: #366598;"><strong>Data-Driven Smart Cities</strong></span><br><br>
+              <strong>Organizers:</strong><br>
+              <ul style="line-height: 1.2em;">
+                  <li>Ekaterina Gilman, U. of Oulu, Finland</li>
+                  <li>Xiang Su, U of Helsinki, Finland</li>
+                  <li>Francesca Bugiotti, U. Paris, France</li>
+              </ul>
+              <strong>Workshop Website:</strong> <a href="https://dasc2026.wordpress.com/" target="_blank">https://dasc2026.wordpress.com/</a>
+          </td>
+          <td style="text-align: center; border: 1px solid #ddd;">Full</td>
+      </tr>
+  </table>
+
+</section>
+-->
+</main>
+
+<footer>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <span><img src="img/icde2026_footer.png"></span>
+    <span>
+      <p>
+        <span>42<sup>nd</span> IEEE International Conference on Data Engineering, Montreal, Canada - May 4-8, 2026.<br>
+          &#169; IEEE ICDE 2026. All rights reserved. Use of this website signifies your agreement to the 
+            <a href="http://www.ieee.org/site_terms_conditions.html" target="_blank" rel="noopener" style="color: #c51c2b;">IEEE Terms and Conditions</a>. <br>
+            A public charity, IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.    
+
+      </p>      
+    </span>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="css/min.css">
+<script async src="js/min.js"></script>
+
+<script async src="https://platform.twitter.com/widgets.js"></script>
+<script>
+    (function() {
+        var last = 0,
+            docBody = document.body,
+            header = document.querySelector('body>header'),
+            nav = header && header.querySelector('nav'),
+            requestAnimationFrame = window.requestAnimationFrame || function(callback, element) {
+                var now = Date.now(),
+                    next = Math.max(0, 16 - (now - last)),
+                    id = window.setTimeout(function() {
+                        callback(now + next);
+                    }, next);
+                last = now + next;
+                return id;
+            },
+            cancelAnimationFrame = window.cancelAnimationFrame || function(id) {
+                clearTimeout(id);
+            },
+            update = function () {
+                if (!nav) return;
+
+                var isStatic = docBody.classList.contains('static');
+                if (header.getBoundingClientRect().bottom > 70) {
+                    if (isStatic) docBody.classList.remove('static');
+                } else if (!isStatic) docBody.classList.add('static');
+            },
+            lid;
+
+        window.addEventListener('scroll', function(e) {
+            if (lid) cancelAnimationFrame(lid);
+            lid = requestAnimationFrame(update);
+        });
+
+        update();
+    }());
+</script>
+</body>
+</html>
